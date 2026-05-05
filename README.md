@@ -4,7 +4,7 @@ This repository contains my internship tasks, projects, and learning progress at
 
 ## 📌 Overview
 - Internship Focus: Full Stack Development
-- Technologies: HTML, CSS, JavaScript, React, Node.js (update as needed)
+- Technologies: HTML, CSS, JavaScript, React, Node.js 
 
 ## 📁 Structure
 - Week folders contain tasks and assignments
