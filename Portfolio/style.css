@@ -92,6 +92,16 @@ strong { color: var(--color-text); font-weight: 500; }
 .btn-outline       { background: transparent; color: var(--color-text); border: 1px solid var(--color-border); }
 .btn-outline:hover { border-color: var(--color-accent); color: var(--color-accent); }
 
+/* Light mode overrides */
+body.light-mode {
+  --color-bg:     #f5f5f0;
+  --color-bg-2:   #ebebeb;
+  --color-bg-3:   #e0e0da;
+  --color-text:   #0a0a0a;
+  --color-muted:  #444440;
+  --color-border: rgba(0, 0, 0, 0.1);
+}
+
 /* ============================================================
    HEADER & NAV
 ============================================================ */
