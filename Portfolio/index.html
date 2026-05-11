@@ -38,6 +38,16 @@
 
         <a href="#contact" class="btn btn-primary nav-cta">Hire Me</a>
 
+        <!-- Theme toggle button -->
+        <button
+          type="button"
+          class="theme-toggle"
+          id="js-theme-toggle"
+          aria-label="Switch to light mode"
+        >
+          ☀️
+        </button>
+        
         <!-- Hamburger button — only visible on mobile -->
         <button
           type="button"
@@ -365,32 +375,7 @@
       </div>
     </footer>
 
-    <script>
-      const menu = document.getElementById('mobile-menu');
-      const backdrop = document.getElementById('mobile-backdrop');
-      const hamburger = document.querySelector('.nav-hamburger');
-      const closeBtn = document.querySelector('.mobile-menu-close');
-      const menuLinks = document.querySelectorAll('.mobile-nav-links a');
-
-      function openMenu() {
-        menu.classList.add('is-open');
-        backdrop.classList.add('is-open');
-        hamburger.setAttribute('aria-expanded', 'true');
-        document.body.style.overflow = 'hidden';
-      }
-
-      function closeMenu() {
-        menu.classList.remove('is-open');
-        backdrop.classList.remove('is-open');
-        hamburger.setAttribute('aria-expanded', 'false');
-        document.body.style.overflow = '';
-      }
-
-      hamburger.addEventListener('click', openMenu);
-      closeBtn.addEventListener('click', closeMenu);
-      backdrop.addEventListener('click', closeMenu);
-      menuLinks.forEach(link => link.addEventListener('click', closeMenu));
-    </script>
+    <script src="script.js"></script>
 
   </body>
 </html>
