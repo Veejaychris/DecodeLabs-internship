@@ -3,7 +3,7 @@
 This repository contains my internship tasks, projects, and learning progress at DecodeLabs.
 
 ## 📌 Overview
-- Internship Focus: Full Stack Development
+- Internship Focus: Frontend Development
 - Technologies: HTML, CSS, JavaScript, React, Node.js 
 
 ## 📁 Structure
@@ -11,7 +11,7 @@ This repository contains my internship tasks, projects, and learning progress at
 - Projects folder contains completed mini-projects
 
 ## 🚀 Goals
-- Improve frontend and backend development skills
+- Improve frontend development skills
 - Build real-world projects
 - Learn industry best practices
 
