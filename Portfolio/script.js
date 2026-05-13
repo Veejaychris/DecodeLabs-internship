@@ -58,3 +58,41 @@ themeToggle.addEventListener('click', () => {
   }
 
 });
+
+// ============================================================
+// ANIMATED STAT COUNTERS
+// ============================================================
+
+const statNumbers = document.querySelectorAll('.stat-number');
+
+function animateCounter(element) {
+  const target = parseInt(element.getAttribute('data-target'));
+  const duration = 1500;
+  const stepTime = 50;
+  const steps = duration / stepTime;
+  const increment = target / steps;
+  let current = 0;
+
+  const timer = setInterval(() => {
+    current += increment;
+
+    if (current >= target) {
+      element.textContent = target + '+';
+      clearInterval(timer);
+    } else {
+      element.textContent = Math.floor(current) + '+';
+    }
+  }, stepTime);
+}
+
+// Use Intersection Observer to trigger when stats are visible
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      animateCounter(entry.target);
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.5 });
+
+statNumbers.forEach(stat => observer.observe(stat));
