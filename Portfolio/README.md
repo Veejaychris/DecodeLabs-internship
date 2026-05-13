@@ -8,7 +8,7 @@ Or simply visit the live link above.
 |---------|-------------|--------|
 | Project 1 | Static Webpage Design | ✅ Complete |
 | Project 2 | Responsive Web Layout | ✅ Complete |
-| Project 3 | Dark Mode Toggle | ✅ Complete |
+| Project 3 | Interactive Web Elements | ✅ Complete |
 
 ## 👤 Author
 **John Christopher** — Veejaychris  
