@@ -1,0 +1,9 @@
+title: DecodeLabs Portfolio
+description: Frontend Development Internship Portfolio
+theme: jekyll-theme-minimal
+include:
+  - Portfolio
+exclude:
+  - .gitignore
+  - README.md
+  - .github
